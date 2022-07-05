@@ -1,0 +1,30 @@
+.header {
+  display: grid;
+  grid-template-columns: 51px 188px 902px 742px 31px;
+  position: fixed;
+  background-color: yellow;
+  height: 50px;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.header__nav {
+  display: flex;
+  grid-column-start: 4;
+  justify-content: space-between;
+}
+
+.header__nav__list {
+  grid-column-start: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 518px;
+  text-transform: none;
+  text-decoration: none;
+}
+
+.header__nav__list__element {
+  text-decoration: none;
+}/*# sourceMappingURL=style.css.map */
