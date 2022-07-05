@@ -6,7 +6,7 @@
 
 .header {
    display: grid;
-   grid-template-columns: 51px 188px 902px 742px 31px;
+   grid-template-columns: 51px 188px auto 742px 31px;
    position: fixed;
    background-color: yellow;
    height: 120px;
@@ -40,6 +40,10 @@
       font-size: 15px;
       text-decoration: none;
       color: $blacklight;
+
+      &:hover {
+         font-weight: $extrabold;
+      }
    }
    }
 
@@ -53,16 +57,26 @@
       font-size: 15px;
       letter-spacing: 0;
       border: none;
+
+      &:hover {
+         font-weight: $extrabold;
+      }
    
    }
 }
 
 
+@media (min-width: $layout-breakpoint) {
+   .header {
+      grid-template-columns: 51px 188px 902px 742px 31px;
+      
+   }
+}
 
 
-
-.solution {
-   font-weight: $extrabold;
+.bcgimage {
+   margin-top: 120px;
+   // background-image: url("vector.jpg")
 }
 
 
