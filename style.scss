@@ -1,42 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap');
+
+@import 'variables';
+
+
 
 .header {
    display: grid;
    grid-template-columns: 51px 188px 902px 742px 31px;
    position: fixed;
    background-color: yellow;
-   height: 50px;
+   height: 120px;
    top: 0;
    left: 0;
    right: 0;
 }
   
-
+.header__img {
+   grid-column-start: 2;
+   align-self: center;
+}
 
 .header__nav {
    display: flex;
    grid-column-start: 4;
    justify-content: space-between;
+   align-items: center;
 
-
-   // grid-template-columns: 518px 44px 115px;
-
-}
-
-.header__nav__list {
-   grid-column-start: 1;
+   &__list {
+      grid-column-start: 1;
    display: flex;
    align-items: center;
    justify-content: space-between;
    width: 518px;
-   text-transform: none;
    text-decoration: none;
+
+   &__element {
+      font-family: $monte;
+      font-weight: $medium;
+      font-size: 15px;
+      text-decoration: none;
+      color: $blacklight;
+   }
+   }
+
+   &__button {
+      width: 180px;
+      height: 50px;
+      background-color: $red;
+      color: $white;
+      font-family: $monte;
+      font-weight: 200;
+      font-size: 15px;
+      letter-spacing: 0;
+      border: none;
+   
+   }
 }
 
 
 
-.header__nav__list__element {
-   text-decoration: none;
+
+
+.solution {
+   font-weight: $extrabold;
 }
+
 
 
 
