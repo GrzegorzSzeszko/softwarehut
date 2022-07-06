@@ -201,4 +201,22 @@
   grid-row-start: 8;
   display: flex;
   justify-content: space-between;
+}
+.main_container__lorem_section {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 8px;
+}
+.main_container__lorem_section__container {
+  width: 470px;
+  height: 470px;
+  grid-column-start: 1;
+  grid-column-end: span 5;
+}
+.main_container__lorem_section__container__ceo {
+  height: 420px;
+  width: 370px;
+  background-color: #F2F2F2;
+  margin-top: 10px;
+  margin-left: 30px;
 }/*# sourceMappingURL=style.css.map */
