@@ -14,7 +14,7 @@ body {
   position: fixed;
   z-index: 100;
   padding: 25px 0;
-  grid-template-columns: 51px 188px auto 742px 31px;
+  grid-template-columns: auto 188px auto 742px auto;
   background: url(images/abstract.jpg) no-repeat;
   background-size: cover;
   top: 0;
@@ -31,9 +31,10 @@ body {
     grid-column-start: 4;
     justify-content: space-between;
     align-items: center;
+    
 
     &__list {
-      grid-column-start: 1;
+      // grid-column-start: 1;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -61,9 +62,9 @@ body {
       font-family: $monte;
       font-weight: 200;
       font-size: 15px;
-      letter-spacing: 0;
       border: none;
       cursor: pointer;
+      align-self: flex-end;
 
       &:hover {
         font-weight: $extrabold;
@@ -72,11 +73,97 @@ body {
   }
 }
 
-// @media (min-width: $layout-breakpoint) {
-//   .header {
-//     // grid-template-columns: 51px 188px 902px 742px 31px;
-//   }
-// }
+@media (max-width: $layout-break-medium) {
+  .header {
+    grid-template-columns: 188px  742px;
+
+  }
+
+  .header .navigation{
+    grid-column-start: 2;
+    justify-content: flex-start;
+    width: auto;
+  }
+  
+  .header__img {
+    grid-column-start: 1;
+  }
+
+  .navigation {
+    grid-column-start: 2;
+    
+  }
+
+  .header .navigation__list{
+    grid-column-start: 2;
+    justify-content: flex-start;
+    width: auto;
+  }
+  
+  .navigation__list__element {
+    margin-right: 10px;
+  }
+
+
+
+}
+
+
+@media (max-width: $layout-break-tablet) {
+  .header {
+    grid-template-columns: 188px  742px;
+
+  }
+
+  .header .navigation{
+    grid-column-start: 2;
+    justify-content: flex-start;
+    width: auto;
+  }
+  
+  .header__img {
+    grid-column-start: 1;
+  }
+
+  .navigation {
+    grid-column-start: 2;
+    
+  }
+
+  .header .navigation__list{
+    grid-column-start: 2;
+    justify-content: flex-start;
+    width: auto;
+  }
+  
+  .navigation__list__element {
+    margin-right: 5px;
+  }
+
+  .header .navigation__button {
+    width: auto;
+  }
+
+
+
+}
+
+@media (max-width: $layout-break-mobile) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+  }
+
+  .header .navigation{
+    justify-content: flex-start;
+    width: auto;
+  }
+
+}
+
+
 
 .section-container {
   max-width: 1130px;
@@ -422,6 +509,7 @@ body {
   margin-top: 100px;
   margin-bottom: 100px;
 }
+
 
 
 // footer
