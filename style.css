@@ -149,32 +149,36 @@ body {
 }
 .top_section .bcgimage {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: center;
   background: url("images/abstract.jpg") no-repeat;
   background-size: cover;
-  justify-content: space-around;
+}
+.top_section .bcgimage__ground_text_wrapper {
+  display: flex;
+  justify-content: center;
 }
 .top_section .bcgimage__content {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
   padding: 0 15px;
   height: 100%;
 }
 .top_section .bcgimage__content__top_text {
-  height: 137px;
   width: 754px;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   font-size: 60px;
   line-height: 77px;
   letter-spacing: -1px;
-  padding: 320px 0 170px;
+  padding: 300px 0 170px;
 }
 .top_section .bcgimage__content__ground_text {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
+  margin-bottom: 60px;
+  margin-left: -30%;
 }
 .top_section .bcgimage__content__image {
   padding: 270px 0 200px;
@@ -182,6 +186,33 @@ body {
   width: 225px;
 }
 
+@media (max-width: 1150px) {
+  .top_section .bcgimage {
+    justify-content: flex-start;
+  }
+}
+@media (max-width: 668px) {
+  .top_section .bcgimage__content__top_text {
+    width: auto;
+    padding: 200px 0 20px 0;
+  }
+
+  .top_section .bcgimage__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .top_section .bcgimage__content__image {
+    align-self: center;
+    padding: 0;
+    margin-bottom: 30px;
+  }
+
+  .top_section .bcgimage__content__ground_text {
+    margin-left: 0;
+  }
+}
 .main_container {
   width: 100%;
 }
