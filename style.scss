@@ -288,13 +288,13 @@ body {
   }
 }
 
-.stage1_section {
+.stage_section {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-column-gap: 8px;
   padding: 100px 0 180px;
 
-  &__stage1 {
+  &__stage {
     grid-column-start: 3;
     margin-bottom: 50px;
   }

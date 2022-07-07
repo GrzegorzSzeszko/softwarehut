@@ -246,22 +246,22 @@ body {
   transform: rotate(180deg) translateX(-45px) translateY(-45px);
 }
 
-.stage1_section {
+.stage_section {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-column-gap: 8px;
   padding: 100px 0 180px;
 }
-.stage1_section__stage1 {
+.stage_section__stage {
   grid-column-start: 3;
   margin-bottom: 50px;
 }
-.stage1_section__longtext {
+.stage_section__longtext {
   grid-column-start: 3;
   grid-column-end: 11;
   margin-bottom: 60px;
 }
-.stage1_section__bialystok {
+.stage_section__bialystok {
   grid-column-start: 3;
   grid-column-end: 11;
 }
