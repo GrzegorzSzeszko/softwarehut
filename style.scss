@@ -85,10 +85,7 @@ body {
   
 }
 
-.section-container-box {
-  padding-top: 30px;
-  padding-bottom: 20px;
-}
+
 
 .top_section {
   display: flex;
@@ -294,11 +291,18 @@ body {
   }
 }
 
+
+@mixin define_bottom($padding_bottom, ) {
+  padding-bottom: $padding_bottom;
+}
+
+
+
 .stage_section {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-column-gap: 8px;
-  padding: 100px 0 130px;
+  padding: 50px 0 80px;
 
   &__stage {
     grid-column-start: 3;
@@ -321,6 +325,11 @@ body {
   }
 }
 
+.big_image {
+  padding-top: 50px;
+  margin-bottom: 10px;
+}
+
 .section-container__image {
   width: 100%;
 }
@@ -330,7 +339,7 @@ body {
   grid-template-columns: repeat(12, 1fr);
   grid-column-gap: 8px;
   width: 100%;
-  margin-bottom: 80px;
+  margin-bottom: 130px;
 
   &__mozaika {
     height: 442px;
@@ -341,7 +350,7 @@ body {
 
   &__layer {
     height: 442px;
-    width: 466px;
+    width: 470px;
     grid-column-start: 8;
     grid-column-end: 12;
   }
@@ -351,6 +360,10 @@ body {
   grid-column-start: $grid_start;
   grid-column-end: $grid_end;
 }
+
+
+
+
 
 
   .number {
@@ -384,7 +397,7 @@ body {
   grid-template-columns: repeat(12, 1fr);
   grid-column-gap: 8px;
   background-color: $gray;
-  padding-top: 60px;
+  margin-top: 160px;
 
   &__one {
     @include define_start(3, 5);
@@ -403,6 +416,11 @@ body {
 
 .section__container__paralax {
   width: 100%;
+}
+
+.paralax_margin_top {
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 
