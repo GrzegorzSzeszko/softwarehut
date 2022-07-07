@@ -12,7 +12,7 @@ body {
   z-index: 100;
   padding: 25px 0;
   grid-template-columns: 51px 188px auto 742px 31px;
-  background: url("/images/abstract.jpg") no-repeat;
+  background: url("../images/abstract.jpg") no-repeat;
   background-size: cover;
   top: 0;
   left: 0;
@@ -250,7 +250,7 @@ body {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-column-gap: 8px;
-  padding: 100px 0 180px;
+  padding: 100px 0 130px;
 }
 .stage_section__stage {
   grid-column-start: 3;
