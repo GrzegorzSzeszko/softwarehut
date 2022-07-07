@@ -290,6 +290,50 @@ body {
   grid-column-end: 12;
 }
 
+.number {
+  color: #323232;
+  font-family: "Roboto", sans-serif;
+  font-size: 100px;
+  font-weight: 100;
+  line-height: 36px;
+  padding: 90px 0 40px;
+}
+
+.empty_shape {
+  height: 1px;
+  width: 180px;
+  opacity: 0.2;
+  background-color: #838383;
+}
+
+.text {
+  color: #323232;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  padding: 40px 0 80px;
+}
+
+.numbers_section {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 8px;
+  padding-top: 100px;
+}
+.numbers_section__one {
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
+.numbers_section__two {
+  grid-column-start: 6;
+  grid-column-end: 8;
+}
+.numbers_section__three {
+  grid-column-start: 9;
+  grid-column-end: 11;
+}
+
 .section__container__paralax {
   width: 100%;
 }
