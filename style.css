@@ -265,6 +265,9 @@ body {
   grid-column-start: 3;
   grid-column-end: 11;
 }
+.stage_section__bialystok.alone {
+  padding-top: 90px;
+}
 
 .section-container__image {
   width: 100%;
@@ -319,7 +322,8 @@ body {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-column-gap: 8px;
-  padding-top: 100px;
+  background-color: #F2F2F2;
+  padding-top: 60px;
 }
 .numbers_section__one {
   grid-column-start: 3;

@@ -308,6 +308,10 @@ body {
   &__bialystok {
     grid-column-start: 3;
     grid-column-end: 11;
+
+    &.alone {
+      padding-top: 90px;
+    }
   }
 }
 
@@ -365,6 +369,7 @@ body {
     font-weight: $medium;
     line-height: 18px;
     padding: 40px 0 80px;
+   
   }
 
 
@@ -372,7 +377,8 @@ body {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-column-gap: 8px;
-  padding-top: 100px;
+  background-color: $gray;
+  padding-top: 60px;
 
   &__one {
     @include define_start(3, 5);
