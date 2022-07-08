@@ -426,6 +426,13 @@ body {
   grid-column-end: 12;
 }
 
+@media (max-width: 668px) {
+  .first_section {
+    grid-template-columns: repeat(8, 1fr);
+    -moz-column-gap: 0;
+         column-gap: 0;
+  }
+}
 @media (max-width: 1150px) {
   .twofotos__container {
     grid-template-columns: none;
@@ -492,6 +499,24 @@ body {
   grid-column-end: 11;
 }
 
+@media (max-width: 668px) {
+  .numbers_section {
+    grid-template-columns: none;
+    grid-column-gap: 0;
+  }
+  .numbers_section__one {
+    grid-column-start: none;
+    grid-column-end: none;
+  }
+  .numbers_section__two {
+    grid-column-start: none;
+    grid-column-end: none;
+  }
+  .numbers_section__three {
+    grid-column-start: none;
+    grid-column-end: none;
+  }
+}
 .section__container__paralax {
   width: 100%;
 }

@@ -483,6 +483,13 @@ body {
   }
 }
 
+@media (max-width: $layout-break-mobile) {
+  .first_section {
+    grid-template-columns: repeat(8, 1fr);
+    column-gap: 0;
+  }
+}
+
 @mixin define_start($grid_start, $grid_end) {
   grid-column-start: $grid_start;
   grid-column-end: $grid_end;
@@ -537,6 +544,8 @@ body {
   padding: 40px 0 80px;
 }
 
+// numbers section
+
 .numbers_section {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -556,6 +565,27 @@ body {
     @include define_start(9, 11);
   }
 }
+
+@media (max-width: $layout-break-mobile) {
+  .numbers_section {
+    grid-template-columns: none;
+    grid-column-gap: 0;
+
+    &__one {
+      @include define_start(none, none);
+    }
+
+    &__two {
+      @include define_start(none, none);
+    }
+    
+
+    &__three {
+      @include define_start(none, none);
+    }
+  }
+}
+
 
 // parallax
 
