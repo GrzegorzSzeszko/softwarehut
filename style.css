@@ -426,6 +426,27 @@ body {
   grid-column-end: 12;
 }
 
+@media (max-width: 1150px) {
+  .twofotos__container {
+    grid-template-columns: none;
+    grid-column-gap: 0;
+    justify-content: center;
+    height: auto;
+    width: auto;
+  }
+  .twofotos__container__mozaika {
+    height: auto;
+    width: 100%;
+    grid-column-start: none;
+    grid-column-end: none;
+  }
+  .twofotos__container__layer {
+    height: auto;
+    width: 100%;
+    grid-column-start: none;
+    grid-column-end: none;
+  }
+}
 .number {
   color: #323232;
   font-family: "Roboto", sans-serif;
