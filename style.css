@@ -526,6 +526,28 @@ body {
   margin-bottom: 100px;
 }
 
+.section_inv_mobile {
+  display: flex;
+  grid-column-gap: 8px;
+  height: auto;
+  color: #FFFFFF;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+.section_inv_mobile__inv {
+  background-color: #E92F03;
+  padding: 5px;
+  border-radius: 50px;
+}
+.section_inv_mobile__mobile {
+  background-color: #E92F03;
+  padding: 5px;
+  border-radius: 50px;
+}
+
 .footer {
   background-color: #323232;
   padding: 50px 0;

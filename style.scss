@@ -598,6 +598,34 @@ body {
   margin-bottom: 100px;
 }
 
+// mobile 
+
+.section_inv_mobile {
+  display: flex;
+  // grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 8px;
+  height: auto;
+  color: $white;
+  font-family: $roboto;
+  font-size: 16px;
+  line-height: 26px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+
+  &__inv {
+    background-color: $red;
+    padding: 5px;
+    border-radius: 50px;
+  }
+
+  &__mobile {
+    background-color: $red;
+    padding: 5px;
+    border-radius: 50px;
+  }
+}
+
+
 // footer
 
 .footer {
