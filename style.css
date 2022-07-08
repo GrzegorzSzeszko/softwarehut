@@ -223,54 +223,61 @@ body {
   background-color: #F2F2F2;
   margin-top: -15px;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 60px auto 30px 30px 50px;
   -moz-column-gap: 8px;
        column-gap: 8px;
 }
-.first_section__employees {
-  grid-column-start: 2;
-  grid-row-start: 2;
+.first_section .wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.first_section .wrapper__title {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   font-weight: 500;
+  padding: 30px 0 60px;
 }
-.first_section__employees_num {
-  grid-column-start: 2;
+.first_section .wrapper__info {
   grid-row-start: 4;
   font-family: "Montserrat", sans-serif;
   font-size: 32px;
   font-weight: 600;
+  padding-bottom: 50px;
 }
-.first_section__year_of_establishment {
+.first_section .wrapper_one {
+  grid-column-start: 2;
+}
+.first_section .wrapper_two {
   grid-column-start: 6;
-  grid-row-start: 2;
-  font-family: "Montserrat", sans-serif;
-  font-size: 14px;
-  font-weight: 500;
 }
-.first_section__2017 {
-  grid-column-start: 6;
-  grid-row-start: 4;
-  font-family: "Montserrat", sans-serif;
-  font-size: 32px;
-  font-weight: 600;
-}
-.first_section__industry {
-  grid-column-start: 9;
-  grid-row-start: 2;
-  font-family: "Montserrat", sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-}
-.first_section__it {
+.first_section .wrapper_three {
   grid-column-start: 9;
   grid-column-end: 12;
-  grid-row-start: 4;
-  font-family: "Montserrat", sans-serif;
-  font-size: 32px;
-  font-weight: 600;
 }
 
+@media (max-width: 768px) {
+  .first_section {
+    grid-template-columns: repeat(8, 1fr);
+    -moz-column-gap: 0;
+         column-gap: 0;
+  }
+}
+@media (max-width: 468px) {
+  .first_section {
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: none;
+    -moz-column-gap: 0;
+         column-gap: 0;
+  }
+  .first_section .wrapper_two {
+    grid-column-start: none;
+    grid-row-start: 2;
+  }
+  .first_section .wrapper_three {
+    grid-column-start: none;
+    grid-column-end: 3;
+  }
+}
 .second_section {
   display: grid;
   padding: 100px 0 60px;

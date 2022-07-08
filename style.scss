@@ -268,58 +268,75 @@ body {
   position: relative;
   background-color: $gray;
   margin-top: -15px;
+  // grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 60px auto 30px 30px 50px;
+  // grid-template-rows: 60px auto 30px 30px 50px;
   column-gap: 8px;
 
-  &__employees {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &__title {
+      
+      font-family: $monte;
+      font-size: 14px;
+      font-weight: $medium;
+      padding: 30px 0 60px;
+    }
+  
+    &__info {
+      grid-row-start: 4;
+      font-family: $monte;
+      font-size: 32px;
+      font-weight: $bold;
+      padding-bottom: 50px;
+    }
+
+  }
+
+  .wrapper_one {
     grid-column-start: 2;
-    grid-row-start: 2;
-    font-family: $monte;
-    font-size: 14px;
-    font-weight: $medium;
   }
 
-  &__employees_num {
-    grid-column-start: 2;
-    grid-row-start: 4;
-    font-family: $monte;
-    font-size: 32px;
-    font-weight: $bold;
-  }
-
-  &__year_of_establishment {
+  .wrapper_two {
     grid-column-start: 6;
-    grid-row-start: 2;
-    font-family: $monte;
-    font-size: 14px;
-    font-weight: $medium;
   }
 
-  &__2017 {
-    grid-column-start: 6;
-    grid-row-start: 4;
-    font-family: $monte;
-    font-size: 32px;
-    font-weight: $bold;
-  }
-
-  &__industry {
-    grid-column-start: 9;
-    grid-row-start: 2;
-    font-family: $monte;
-    font-size: 14px;
-    font-weight: $medium;
-  }
-
-  &__it {
+  .wrapper_three {
     grid-column-start: 9;
     grid-column-end: 12;
-    grid-row-start: 4;
-    font-family: $monte;
-    font-size: 32px;
-    font-weight: $bold;
   }
+}
+
+@media (max-width: $layout-break-tablet) {
+  .first_section {
+  grid-template-columns: repeat(8, 1fr);
+  column-gap: 0;
+  }
+}
+
+@media (max-width: $layout-break-mobile_mini) {
+  .first_section {
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: none;
+  column-gap: 0;
+
+  .wrapper_two {
+    grid-column-start: none;
+    grid-row-start: 2;
+  }
+
+  .wrapper_three {
+    grid-column-start: none;
+    grid-column-end: 3;
+  }
+  }
+
+ 
+
+
 }
 
 .second_section {
